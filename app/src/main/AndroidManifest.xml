@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivitySettings"></activity>
+        <activity android:name=".ActivitySocial"></activity>
+        <activity android:name=".ActivityRecommendedTracks" />
+        <activity android:name=".ActivityGenerateTrack" />
+        <activity android:name=".ActivityFavoriteTracks" />
+        <activity android:name=".ActivityRun" />
+        <activity android:name=".ActivitySettings" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

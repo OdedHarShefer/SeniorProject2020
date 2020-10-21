@@ -18,4 +18,14 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this,ActivitySettings.class);
         startActivity(i);
     }
+
+    public void openSocial(View view) {
+        Intent i = new Intent(this,ActivitySocial.class);
+        startActivity(i);
+    }
+
+    public void openRun(View view) {
+        Intent i = new Intent(this,ActivityRun.class);
+        startActivity(i);
+    }
 }
