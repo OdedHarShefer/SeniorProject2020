@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivitySocial"></activity>
+        <activity android:name=".ActivityMyProgress"></activity>
+        <activity android:name=".ActivityProgress" />
+        <activity android:name=".ActivityStartRun" />
+        <activity android:name=".ActivitySearchTrack" />
+        <activity android:name=".ActivityShare" />
+        <activity android:name=".ActivityFriends" />
+        <activity android:name=".ActivitySocial" />
         <activity android:name=".ActivityRecommendedTracks" />
         <activity android:name=".ActivityGenerateTrack" />
         <activity android:name=".ActivityFavoriteTracks" />

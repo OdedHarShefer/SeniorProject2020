@@ -28,4 +28,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this,ActivityRun.class);
         startActivity(i);
     }
+
+    public void openProgress(View view) {
+        Intent i = new Intent(this,ActivityProgress.class);
+        startActivity(i);
+    }
 }

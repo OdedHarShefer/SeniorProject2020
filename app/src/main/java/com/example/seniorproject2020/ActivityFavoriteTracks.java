@@ -20,5 +20,7 @@ public class ActivityFavoriteTracks extends AppCompatActivity {
     }
 
     public void openStartRun(View view) {
+        Intent i = new Intent(this, ActivityStartRun.class);
+        startActivity(i);
     }
 }

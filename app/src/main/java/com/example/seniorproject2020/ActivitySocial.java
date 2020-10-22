@@ -18,4 +18,19 @@ public class ActivitySocial extends AppCompatActivity {
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
+
+    public void openSearchTracks(View view) {
+        Intent i = new Intent(this, ActivitySearchTrack.class);
+        startActivity(i);
+    }
+
+    public void openFriends(View view) {
+        Intent i = new Intent(this, ActivityFriends.class);
+        startActivity(i);
+    }
+
+    public void openShare(View view) {
+        Intent i = new Intent(this, ActivityShare.class);
+        startActivity(i);
+    }
 }
