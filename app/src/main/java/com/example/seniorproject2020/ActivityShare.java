@@ -20,5 +20,7 @@ public class ActivityShare extends AppCompatActivity {
     }
 
     public void openMyProgress(View view) {
+        Intent i = new Intent(this, ActivityMyProgress.class);
+        startActivity(i);
     }
 }

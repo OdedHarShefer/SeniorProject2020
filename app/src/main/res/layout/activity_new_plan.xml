@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityProgress">
+    tools:context=".ActivityNewPlan">
 
     <Button
         android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="openMainMenu"
+        android:onClick="openProgress"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,28 +20,28 @@
         app:layout_constraintVertical_bias="0.023" />
 
     <Button
-        android:id="@+id/buttonNewPlan"
+        android:id="@+id/buttonCustomPlan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
-        android:onClick="openNewPlan"
-        android:text="New Plan"
+        android:onClick="openCustomPlan"
+        android:text="Custom Plan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonMyProgress"
+        android:id="@+id/buttonDefaultPlan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="236dp"
-        android:onClick="openMyProgress"
-        android:text="My Progress"
+        android:layout_marginBottom="244dp"
+        android:onClick="openDefaultPlan"
+        android:text="Default Plan"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/buttonNewPlan"
-        app:layout_constraintHorizontal_bias="0.541"
-        app:layout_constraintStart_toStartOf="@+id/buttonNewPlan"
-        app:layout_constraintTop_toBottomOf="@+id/buttonNewPlan"
-        app:layout_constraintVertical_bias="0.899" />
+        app:layout_constraintEnd_toEndOf="@+id/buttonStartRun"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/buttonStartRun"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStartRun"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

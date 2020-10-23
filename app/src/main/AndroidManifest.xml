@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityMyProgress"></activity>
+        <activity android:name=".ActivityDefaultPlan"></activity>
+        <activity android:name=".ActivityCustomPlan" />
+        <activity android:name=".ActivityNewPlan" />
+        <activity android:name=".ActivityMyProgress" />
         <activity android:name=".ActivityProgress" />
         <activity android:name=".ActivityStartRun" />
         <activity android:name=".ActivitySearchTrack" />
