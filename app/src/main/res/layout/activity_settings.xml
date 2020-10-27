@@ -18,4 +18,71 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/textViewVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="104dp"
+        android:text="TextView"
+        android:textSize="64px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Volume" />
+
+    <SeekBar
+        android:id="@+id/seekBarVolume"
+        android:layout_width="229dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:progress="100"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewVolume"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toEndOf="@+id/textViewVolume"
+        app:layout_constraintTop_toTopOf="@+id/textViewVolume" />
+
+    <TextView
+        android:id="@+id/textViewNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Notifications"
+        android:textSize="64px"
+        app:layout_constraintStart_toStartOf="@+id/textViewVolume"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVolume" />
+
+    <RadioGroup
+        android:layout_width="185dp"
+        android:layout_height="128dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewNotifications"
+        app:layout_constraintTop_toTopOf="@+id/textViewNotifications"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="196dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonFull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full"
+            android:textSize="64px" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Limited"
+            android:textSize="64px" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="None"
+            android:textSize="64px" />
+    </RadioGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
