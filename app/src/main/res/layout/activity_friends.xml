@@ -4,7 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".ActivityFriends">
+
+    <ImageButton
+        android:id="@+id/imageButtonRemoveFriend"
+        android:layout_width="114dp"
+        android:layout_height="114dp"
+        android:layout_marginEnd="60dp"
+        android:background="#FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonAddFriend"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonAddFriend"
+        app:srcCompat="@drawable/remove_friend_icon" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAddFriend"
+        android:layout_width="114dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="92dp"
+        android:background="#FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add_friend_icon" />
 
     <Button
         android:id="@+id/buttonBack"
@@ -18,4 +44,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/textViewAddFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Add Friend"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonAddFriend"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonAddFriend"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonAddFriend" />
+
+    <ListView
+        android:id="@+id/listViewFriends"
+        android:layout_width="409dp"
+        android:layout_height="499dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAddFriend">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textViewRemoveFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Remove Friend"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonRemoveFriend"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonRemoveFriend"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonRemoveFriend" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

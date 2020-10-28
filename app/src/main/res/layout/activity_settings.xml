@@ -7,6 +7,17 @@
     tools:context=".ActivitySettings">
 
     <Button
+        android:id="@+id/buttonChangeEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Change Email"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonChangeUserName"
+        app:layout_constraintStart_toStartOf="@+id/buttonChangeUserName"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChangeUserName" />
+
+    <Button
         android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,7 +37,9 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="104dp"
         android:text="TextView"
+        android:textColor="#000000"
         android:textSize="64px"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Volume" />
@@ -47,19 +60,35 @@
         android:id="@+id/textViewNotifications"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Notifications"
+        android:layout_marginTop="64dp"
+        android:text="Notifications:"
+        android:textColor="#000000"
         android:textSize="64px"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textViewVolume"
         app:layout_constraintTop_toBottomOf="@+id/textViewVolume" />
 
+    <TextView
+        android:id="@+id/textViewAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Account:"
+        android:textColor="#000000"
+        android:textSize="64px"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewNotifications"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupNotifications" />
+
     <RadioGroup
+        android:id="@+id/radioGroupNotifications"
         android:layout_width="185dp"
         android:layout_height="128dp"
         app:layout_constraintBottom_toBottomOf="@+id/textViewNotifications"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewNotifications"
         app:layout_constraintTop_toTopOf="@+id/textViewNotifications"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="196dp">
+        app:layout_constraintVertical_bias="0.0">
 
         <RadioButton
             android:id="@+id/radioButtonFull"
@@ -69,7 +98,7 @@
             android:textSize="64px" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioButtonLimited"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -77,12 +106,34 @@
             android:textSize="64px" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/radioButtonNone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="None"
             android:textSize="64px" />
     </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonChangePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Change Password"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAccount"
+        app:layout_constraintStart_toEndOf="@+id/textViewAccount"
+        app:layout_constraintTop_toTopOf="@+id/textViewAccount" />
+
+    <Button
+        android:id="@+id/buttonChangeUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Change User Name"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonChangePassword"
+        app:layout_constraintStart_toStartOf="@+id/buttonChangePassword"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChangePassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,53 +4,119 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/buttonRun"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="184dp"
+    <ImageButton
+        android:id="@+id/imageButtonRun"
+        android:layout_width="150dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="84dp"
+        android:adjustViewBounds="false"
+        android:background="#FFFFFF"
         android:onClick="openRun"
+        android:scaleType="centerCrop"
+        android:src="@drawable/running_man"
         android:text="Run"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/buttonProgress"
+    <TextView
+        android:id="@+id/textViewProgress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:onClick="openProgress"
+        android:layout_marginTop="4dp"
         android:text="Progress"
-        app:layout_constraintEnd_toEndOf="@+id/buttonRun"
-        app:layout_constraintStart_toStartOf="@+id/buttonRun"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRun" />
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonProgress"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonProgress"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonProgress" />
 
-    <Button
-        android:id="@+id/buttonSocial"
+    <TextView
+        android:id="@+id/textViewSocial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:onClick="openSocial"
+        android:layout_marginTop="4dp"
         android:text="Social"
-        app:layout_constraintEnd_toEndOf="@+id/buttonProgress"
-        app:layout_constraintStart_toStartOf="@+id/buttonProgress"
-        app:layout_constraintTop_toBottomOf="@+id/buttonProgress" />
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonSocial"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonSocial"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonSocial" />
 
-    <Button
-        android:id="@+id/buttonSettings"
+    <ImageButton
+        android:id="@+id/imageButtonSettings"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="52dp"
+        android:background="#FFFFFF"
+        android:onClick="openSettings"
+        android:scaleType="centerCrop"
+        android:src="@drawable/settings_icon"
+        android:text="Settings"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonProgress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonProgress"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProgress" />
+
+    <TextView
+        android:id="@+id/textViewSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:onClick="openSettings"
+        android:layout_marginTop="4dp"
         android:text="Settings"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/buttonSocial"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/buttonSocial"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSocial"
-        app:layout_constraintVertical_bias="0.0" />
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonSettings"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonSettings"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonSettings" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSocial"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="56dp"
+        android:background="#FFFFFF"
+        android:onClick="openSocial"
+        android:scaleType="centerCrop"
+        android:src="@drawable/social_icon"
+        android:text="Social"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonRun"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonRun"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRun" />
+
+    <TextView
+        android:id="@+id/textViewRun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Run"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonRun"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonRun"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonRun" />
+
+    <ImageButton
+        android:id="@+id/imageButtonProgress"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        android:onClick="openProgress"
+        android:scaleType="centerCrop"
+        android:src="@drawable/progress_icon"
+        android:text="Progress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonRun"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonRun" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
