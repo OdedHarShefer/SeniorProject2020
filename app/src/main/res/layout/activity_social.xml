@@ -6,15 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".ActivitySocial">
 
-    <Button
+    <ImageButton
         android:id="@+id/buttonSearchTracks"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="32dp"
+        android:background="#FFFFFF"
         android:onClick="openSearchTracks"
+        android:scaleType="centerCrop"
+        android:src="@drawable/search_icon"
         android:text="Search Tracks"
         app:layout_constraintEnd_toEndOf="@+id/buttonFriends"
-        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/buttonFriends"
         app:layout_constraintTop_toBottomOf="@+id/buttonFriends" />
 
@@ -31,26 +34,71 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
-    <Button
+    <ImageButton
         android:id="@+id/buttonFriends"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="68dp"
+        android:background="#FFFFFF"
         android:onClick="openFriends"
+        android:scaleType="centerCrop"
+        android:src="@drawable/friends_icon"
         android:text="Friends"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/buttonShare"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="32dp"
+        android:background="#FFFFFF"
         android:onClick="openShare"
+        android:scaleType="centerCrop"
+        android:src="@drawable/share_icon"
         android:text="Share"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSearchTracks"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Friends"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonFriends"
+        app:layout_constraintStart_toStartOf="@+id/buttonFriends"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFriends" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Share"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonShare"
+        app:layout_constraintStart_toStartOf="@+id/buttonShare"
+        app:layout_constraintTop_toBottomOf="@+id/buttonShare" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Search Track"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSearchTracks"
+        app:layout_constraintStart_toStartOf="@+id/buttonSearchTracks"
         app:layout_constraintTop_toBottomOf="@+id/buttonSearchTracks" />
 </androidx.constraintlayout.widget.ConstraintLayout>

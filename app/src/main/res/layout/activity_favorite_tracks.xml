@@ -28,5 +28,71 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.934" />
+
+    <ImageButton
+        android:id="@+id/buttonAddFavorite"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        android:scaleType="centerCrop"
+        android:src="@drawable/add_icon"
+        android:text="Add Favorite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBack" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRemoveFavorite"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_marginStart="32dp"
+        android:background="#FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAddFavorite"
+        app:layout_constraintStart_toEndOf="@+id/buttonAddFavorite"
+        app:layout_constraintTop_toTopOf="@+id/buttonAddFavorite"
+        app:layout_constraintVertical_bias="0.507"
+        app:srcCompat="@drawable/remove_icon" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Add Favorite"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAddFavorite"
+        app:layout_constraintStart_toStartOf="@+id/buttonAddFavorite"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddFavorite" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Remove Favorite"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.643"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonRemoveFavorite"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddFavorite"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ListView
+        android:id="@+id/listViewFavoriteTracks"
+        android:layout_width="409dp"
+        android:layout_height="377dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStartRun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
